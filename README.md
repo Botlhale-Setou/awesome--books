@@ -1,30 +1,40 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+<a name="readme-top"></a>
 
-# Awesome Books
+<!-- TABLE OF CONTENTS -->
 
-A database web-app of awesome books created by the user - saves data even while offline.
+# 📗 Table of Contents
 
-Collaboratively built by [Botlhale Setou](https://github.com/Botlhale-Setou) and [Anand Mohan Pathak](https://github.com/Anand8317).
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+- [👥 Authors](#authors)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [📝 License](#license)
 
-<br>
+<!-- PROJECT DESCRIPTION -->
 
-Competencies:
-- Understand different ways to create objects in JavaScript.
-- Create and access properties and methods of JavaScript objects.
+# 📖 Awesome Books <a name="about-project"></a>
 
-<br>
+**Awesome Books** is a database web-app of awesome books created by the user - saves data even while offline.
 
-## Built With
-
+## 🛠 Built With <a name="built-with"></a>
 - JavaScript
 - HTML/CSS
 
-## Live Demo
 
-The [Live Demo Link](https://livedemo.com) is currently unavailable
+<!-- LIVE DEMO -->
 
+## 🚀 Live Demo <a name="live-demo"></a>
 
-## Setup
+- [Live Demo Link](https://yourdeployedapplicationlink.com) currently unavailable.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps:
 1. Click **"Code"** button
@@ -46,9 +56,10 @@ To get a local copy up and running, follow these steps:
 	start index.html
 	```
 
-<br><br><br>
+<!-- AUTHORS -->
 
-## Authors
+## 👥 Authors <a name="authors"></a>
+
 
 👤 **Botlhale Setou**
 - GitHub: [@Botlhale-Setou](https://github.com/Botlhale-Setou)
@@ -61,17 +72,35 @@ To get a local copy up and running, follow these steps:
 - Twitter: [@anand029](https://twitter.com/anand029)
 - LinkedIn: [@anand-pathak-473611171](https://www.linkedin.com/in/anand-pathak-473611171/)
 
-## 🤝 Contributing
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/Botlhale-Setou/awesome--books/issues).
 
-## Show your support
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Give a ⭐️ if you like our project!
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project give it a star!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 📝 License
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
+
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>

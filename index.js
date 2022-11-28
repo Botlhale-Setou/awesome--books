@@ -1,13 +1,7 @@
 let books_list = [];
-// let rmvBtns = 0;
-
-// function add_to_books_list (title, author) {
-
-// }
 
 const add_to_books_list = (title, author) => {
   let book = {
-    // ident: rmvBtns++,
     tit: title,
     aut: author
   }
@@ -28,10 +22,6 @@ const display_books = () => {
   }
 }
 
-
-// add_to_books_list("hello", "world");
-// display_books();
-
 const add_button = document.querySelector('#button');
 add_button.addEventListener("click", () => {
   const title_input = document.querySelector('#title').value;
@@ -45,7 +35,6 @@ add_button.addEventListener("click", () => {
 
 
 const setRmvs = () => {
-  console.log('running');
   let xallRmvs = document.getElementsByClassName('rmv');
   let allRmvs = Array.from(xallRmvs);
 

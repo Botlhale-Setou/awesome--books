@@ -1,4 +1,4 @@
-const books_list = [];
+let books_list = [];
 // let rmvBtns = 0;
 
 // function add_to_books_list (title, author) {
@@ -38,8 +38,9 @@ add_button.addEventListener("click", () => {
   const author_input = document.querySelector('#author').value;
   add_to_books_list(title_input, author_input);
   display_books();
-
   setRmvs();
+
+  window.localStorage.setItem('books', JSON.stringify(books_list));
 });
 
 
@@ -61,3 +62,14 @@ const setRmvs = () => {
 const remove_book = (ix) => {
   books_list.splice(ix, 1);
 }
+
+window.onload = () => {
+  const localStorageItem = window.localStorage.getItem('books');
+
+  if (localStorageItem) {
+    books_list = JSON.parse(localStorageItem);
+
+    display_books()
+    setRmvs();
+  }
+};

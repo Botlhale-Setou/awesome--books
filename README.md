@@ -58,8 +58,8 @@ To get a local copy up and running, follow these steps:
 👤 **Azizbek Ruzmatov**
 
 - GitHub: [@Anand8317](https://github.com/Anand8317)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- Twitter: [@anand029](https://twitter.com/anand029)
+- LinkedIn: [@anand-pathak-473611171](https://www.linkedin.com/in/anand-pathak-473611171/)
 
 ## 🤝 Contributing
 

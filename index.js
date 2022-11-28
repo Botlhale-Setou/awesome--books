@@ -1,4 +1,5 @@
 const books_list = [];
+// let rmvBtns = 0;
 
 // function add_to_books_list (title, author) {
 
@@ -6,6 +7,7 @@ const books_list = [];
 
 const add_to_books_list = (title, author) => {
   let book = {
+    // ident: rmvBtns++,
     tit: title,
     aut: author
   }
@@ -15,15 +17,17 @@ const add_to_books_list = (title, author) => {
 const display_books = () => {
   const book_section = document.querySelector('.books-list');
   book_section.innerHTML = "";
+
   for (let i=0; i<books_list.length; i+=1) {
     book_section.innerHTML += `
       <h4>${books_list[i].tit}</h4>
       <h4>${books_list[i].aut}</h4>
-      <button type='button'>Remove</button>
+      <button id="${i}" class="rmv" type='button'>Remove</button>
       <hr>
     `
   }
 }
+
 
 // add_to_books_list("hello", "world");
 // display_books();
@@ -34,4 +38,26 @@ add_button.addEventListener("click", () => {
   const author_input = document.querySelector('#author').value;
   add_to_books_list(title_input, author_input);
   display_books();
+
+  setRmvs();
 });
+
+
+const setRmvs = () => {
+  console.log('running');
+  let xallRmvs = document.getElementsByClassName('rmv');
+  let allRmvs = Array.from(xallRmvs);
+
+  allRmvs.forEach(btn => {
+    btn.addEventListener('click', () => {
+      remove_book(btn.id);
+      display_books();
+      setRmvs();
+    })
+  });
+  
+};
+
+const remove_book = (ix) => {
+  books_list.splice(ix, 1);
+}

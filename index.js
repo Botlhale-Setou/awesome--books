@@ -14,8 +14,8 @@ const displayBooks = () => {
 
   for (let i = 0; i < booksList.length; i += 1) {
     bookSection.innerHTML += `
-      <h4>${booksList[i].tit}</h4>
-      <h4>${booksList[i].aut}</h4>
+      <p>${booksList[i].tit}</p>
+      <p>${booksList[i].aut}</p>
       <button id="${i}" class="rmv" type='button'>Remove</button>
       <hr>
     `;

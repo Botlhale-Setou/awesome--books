@@ -55,7 +55,7 @@ To get a local copy up and running, follow these steps:
 - LinkedIn: [@botlhalesetou](https://www.linkedin.com/in/botlhalesetou/)
 - Twitter: [@Botlhale_Setou](https://twitter.com/Botlhale_Setou)
 
-👤 **Azizbek Ruzmatov**
+👤 **Anand Mohan Pathak**
 
 - GitHub: [@Anand8317](https://github.com/Anand8317)
 - Twitter: [@anand029](https://twitter.com/anand029)

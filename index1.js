@@ -1,4 +1,4 @@
-class awesomeBooks {
+class AwesomeBooks {
   booksList = [];
 
   addToBooksList = (title, author) => {
@@ -16,7 +16,7 @@ class awesomeBooks {
   displayBooks = () => {
     const bookSection = document.querySelector('.books-list');
     bookSection.innerHTML = '';
-  
+
     for (let i = 0; i < this.booksList.length; i += 1) {
       bookSection.innerHTML += `
         <div class="bookWrapper">
@@ -26,9 +26,9 @@ class awesomeBooks {
       `;
     }
   };
-};
+}
 
-const book = new awesomeBooks();
+const book = new AwesomeBooks();
 
 const setRmvs = () => {
   const xallRmvs = document.getElementsByClassName('rmv');

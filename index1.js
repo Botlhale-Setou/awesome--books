@@ -10,7 +10,7 @@ class awesomeBooks {
   };
 
   removeBook = (ix) => {
-    booksList.splice(ix, 1);
+    this.booksList.splice(ix, 1);
   };
 
   displayBooks = () => {

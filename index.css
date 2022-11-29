@@ -17,4 +17,50 @@ input {
 	max-width: 400px;
 	margin-bottom: 10px;
 	height: 25px;
+  border: 2px solid black;
+  padding-left: 10px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+#button {
+  align-self: flex-end;
+  border: 2px solid black;
+}
+
+.books-list {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.bookWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
+}
+
+.bookWrapper > button {
+  height: 25px;
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 3px 3px 2px black;
+}
+
+#hr1 {
+  width: 20%;
+  height: 2px;
+  margin: 0 auto;
+  background-color: black;
+  margin-top: 30px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
 }

@@ -19,10 +19,10 @@ class awesomeBooks {
   
     for (let i = 0; i < this.booksList.length; i += 1) {
       bookSection.innerHTML += `
-        <p>${this.booksList[i].tit}</p>
-        <p>${this.booksList[i].aut}</p>
+        <div class="bookWrapper">
+        <p>${this.booksList[i].tit} by ${this.booksList[i].aut}</p>
         <button id="${i}" class="rmv" type='button'>Remove</button>
-        <hr>
+        </div>
       `;
     }
   };

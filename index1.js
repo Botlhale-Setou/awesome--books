@@ -72,7 +72,6 @@ window.onload = () => {
     book.displayBooks();
     setRmvs();
   }
-
 };
 
 const listNav = document.getElementById('list__nav1');
@@ -83,7 +82,6 @@ const bookSec = document.querySelector('.list_div');
 const contDiv = document.querySelector('.contDiv');
 const navTitle = document.querySelector('.nav__title');
 
-
 listNav.addEventListener('click', () => {
   bookSec.classList.remove('hide');
   bookSec.classList.add('show');
@@ -91,7 +89,7 @@ listNav.addEventListener('click', () => {
   contDiv.classList.add('hide');
 
   inputs.classList.add('hide');
-})
+});
 
 addNav.addEventListener('click', () => {
   inputs.classList.remove('hide');
@@ -100,7 +98,7 @@ addNav.addEventListener('click', () => {
   bookSec.classList.add('hide');
 
   contDiv.classList.add('hide');
-})
+});
 
 contNav.addEventListener('click', () => {
   contDiv.classList.remove('hide');
@@ -109,7 +107,7 @@ contNav.addEventListener('click', () => {
   bookSec.classList.add('hide');
 
   inputs.classList.add('hide');
-})
+});
 
 navTitle.addEventListener('click', () => {
   contDiv.classList.add('hide');
@@ -119,10 +117,10 @@ navTitle.addEventListener('click', () => {
 
   inputs.classList.remove('hide');
   inputs.classList.add('show2');
-})
+});
 
 window.setInterval(() => {
   const clock = document.querySelector('.clock');
-  let d = new Date();
+  const d = new Date();
   clock.innerHTML = d;
 }, 1000);

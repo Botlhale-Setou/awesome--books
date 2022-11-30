@@ -1,3 +1,5 @@
+// import * as lux from "./modules/luxon.js"
+
 class AwesomeBooks {
   booksList = [];
 
@@ -56,6 +58,14 @@ addButton.addEventListener('click', () => {
 });
 
 window.onload = () => {
+  let inputs = document.querySelector('.inputs');
+  let bookSec = document.querySelector('.list_div');
+  let contDiv = document.querySelector('.contDiv');
+
+  contDiv.classList.add('hide');
+  bookSec.classList.add('hide');
+  inputs.classList.add('hide');
+  
   const localStorageItem = window.localStorage.getItem('books');
 
   if (localStorageItem) {
@@ -64,6 +74,7 @@ window.onload = () => {
     book.displayBooks();
     setRmvs();
   }
+
 };
 
 const listNav = document.getElementById('list__nav1');
@@ -111,3 +122,9 @@ navTitle.addEventListener('click', () => {
   inputs.classList.remove('hide');
   inputs.classList.add('show2');
 })
+
+window.setInterval(() => {
+  const clock = document.querySelector('.clock');
+  let d = new Date();
+  clock.innerHTML = d;
+}, 1000);

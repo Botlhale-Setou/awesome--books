@@ -136,3 +136,8 @@ footer > p {
 .nav__title:hover {
   cursor: pointer;
 }
+
+.clock {
+  align-self: flex-end;
+  margin-right: 5vw;
+}

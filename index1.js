@@ -56,6 +56,14 @@ addButton.addEventListener('click', () => {
 });
 
 window.onload = () => {
+  const inputs = document.querySelector('.inputs');
+  const bookSec = document.querySelector('.list_div');
+  const contDiv = document.querySelector('.contDiv');
+
+  contDiv.classList.add('hide');
+  bookSec.classList.add('hide');
+  inputs.classList.add('hide');
+
   const localStorageItem = window.localStorage.getItem('books');
 
   if (localStorageItem) {
@@ -65,3 +73,54 @@ window.onload = () => {
     setRmvs();
   }
 };
+
+const listNav = document.getElementById('list__nav1');
+const addNav = document.getElementById('list__nav2');
+const contNav = document.getElementById('list__nav3');
+const inputs = document.querySelector('.inputs');
+const bookSec = document.querySelector('.list_div');
+const contDiv = document.querySelector('.contDiv');
+const navTitle = document.querySelector('.nav__title');
+
+listNav.addEventListener('click', () => {
+  bookSec.classList.remove('hide');
+  bookSec.classList.add('show');
+
+  contDiv.classList.add('hide');
+
+  inputs.classList.add('hide');
+});
+
+addNav.addEventListener('click', () => {
+  inputs.classList.remove('hide');
+  inputs.classList.toggle('show2');
+
+  bookSec.classList.add('hide');
+
+  contDiv.classList.add('hide');
+});
+
+contNav.addEventListener('click', () => {
+  contDiv.classList.remove('hide');
+  contDiv.classList.add('show');
+
+  bookSec.classList.add('hide');
+
+  inputs.classList.add('hide');
+});
+
+navTitle.addEventListener('click', () => {
+  contDiv.classList.add('hide');
+
+  bookSec.classList.remove('hide');
+  bookSec.classList.add('show');
+
+  inputs.classList.remove('hide');
+  inputs.classList.add('show2');
+});
+
+window.setInterval(() => {
+  const clock = document.querySelector('.clock');
+  const d = new Date();
+  clock.innerHTML = d;
+}, 1000);

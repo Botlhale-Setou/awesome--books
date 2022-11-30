@@ -71,35 +71,43 @@ const addNav = document.getElementById('list__nav2');
 const contNav = document.getElementById('list__nav3');
 const inputs = document.querySelector('.inputs');
 const bookSec = document.querySelector('.list_div');
-const contDiv = document.querySelector('#contDiv');
+const contDiv = document.querySelector('.contDiv');
+const navTitle = document.querySelector('.nav__title');
 
 
 listNav.addEventListener('click', () => {
-  bookSec.classList.toggle('show');
+  bookSec.classList.remove('hide');
+  bookSec.classList.add('show');
 
-  // contDiv.classList.remove('show');
-  // contDiv.classList.add('hide');
+  contDiv.classList.add('hide');
 
-  // inputs.classList.remove('show');
-  // inputs.classList.add('hide');
+  inputs.classList.add('hide');
 })
 
 addNav.addEventListener('click', () => {
+  inputs.classList.remove('hide');
   inputs.classList.toggle('show2');
 
-  // bookSec.classList.remove('show');
-  // bookSec.classList.add('hide');
+  bookSec.classList.add('hide');
 
-  // contDiv.classList.remove('show');
-  // contDiv.classList.add('hide');
+  contDiv.classList.add('hide');
 })
 
 contNav.addEventListener('click', () => {
-  contDiv.classList.toggle('show');
+  contDiv.classList.remove('hide');
+  contDiv.classList.add('show');
 
-  // bookSec.classList.remove('show');
-  // bookSec.classList.add('hide');
+  bookSec.classList.add('hide');
 
-  // inputs.classList.remove('show');
-  // inputs.classList.add('hide');
+  inputs.classList.add('hide');
+})
+
+navTitle.addEventListener('click', () => {
+  contDiv.classList.add('hide');
+
+  bookSec.classList.remove('hide');
+  bookSec.classList.add('show');
+
+  inputs.classList.remove('hide');
+  inputs.classList.add('show2');
 })

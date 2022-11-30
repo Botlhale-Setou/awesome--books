@@ -25,7 +25,6 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  display: none;
 }
 
 #button {
@@ -99,34 +98,21 @@ nav {
   color: blue;
 }
 
-/* .books-list .toggle {
-  display: none;
-}
-
-.inputs .toggle {
-  display: none;
-} */
-
-.hide {
+.contDiv {
   display: none;
 }
 
 .show {
-  display: inherit;
+  display: block;
 }
 
 .list_div {
   width: 70%;
   text-align: center;
-  display: none;
 }
 
 .show2 {
   display: flex;
-}
-
-#contDiv {
-  display: none;
 }
 
 footer {
@@ -141,4 +127,12 @@ footer {
 
 footer > p {
   font-weight: 900;
+}
+
+.hide {
+  display: none;
+}
+
+.nav__title:hover {
+  cursor: pointer;
 }

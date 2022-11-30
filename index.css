@@ -39,7 +39,7 @@ input {
   border: 2px solid black;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 90vw;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -96,4 +96,30 @@ nav {
 
 .nav__ul > li:hover {
   color: blue;
+}
+
+/* .books-list .toggle {
+  display: none;
+}
+
+.inputs .toggle {
+  display: none;
+} */
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.list_div {
+  width: 70%;
+  /* border: 2px solid green; */
+  text-align: center;
+}
+
+.show2 {
+  display: flex;
 }

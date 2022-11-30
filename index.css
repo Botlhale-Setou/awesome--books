@@ -72,3 +72,28 @@ input {
   border-bottom-left-radius: 5px;
   border-top-right-radius: 5px;
 }
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90vw;
+  border: 2px solid black;
+  padding: 0 40px;
+}
+
+.nav__ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav__ul > li {
+  margin-right: 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.nav__ul > li:hover {
+  color: blue;
+}

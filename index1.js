@@ -71,16 +71,35 @@ const addNav = document.getElementById('list__nav2');
 const contNav = document.getElementById('list__nav3');
 const inputs = document.querySelector('.inputs');
 const bookSec = document.querySelector('.list_div');
+const contDiv = document.querySelector('#contDiv');
 
 
 listNav.addEventListener('click', () => {
-  inputs.classList.add('hide');
-  inputs.classList.remove('show');
-  bookSec.classList.add('show');
+  bookSec.classList.toggle('show');
+
+  // contDiv.classList.remove('show');
+  // contDiv.classList.add('hide');
+
+  // inputs.classList.remove('show');
+  // inputs.classList.add('hide');
 })
 
 addNav.addEventListener('click', () => {
-  bookSec.classList.remove('show');
-  bookSec.classList.add('hide');
-  inputs.classList.add('show2');
+  inputs.classList.toggle('show2');
+
+  // bookSec.classList.remove('show');
+  // bookSec.classList.add('hide');
+
+  // contDiv.classList.remove('show');
+  // contDiv.classList.add('hide');
+})
+
+contNav.addEventListener('click', () => {
+  contDiv.classList.toggle('show');
+
+  // bookSec.classList.remove('show');
+  // bookSec.classList.add('hide');
+
+  // inputs.classList.remove('show');
+  // inputs.classList.add('hide');
 })
